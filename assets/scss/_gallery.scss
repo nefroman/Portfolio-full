@@ -1,0 +1,207 @@
+.gallery {
+    width: 355px;
+    height: 662px;
+    -webkit-box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.75);
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 12px;
+    margin-top: 50px;
+    
+    .gallery-image {
+        img {
+            width: 321px;
+            height: 343px;
+            border-radius: 12px;
+            margin-top: 33px;
+            margin-left: 13px;
+            margin-right: 13px;
+        }
+    }
+
+    .gallery-technology {
+        display: grid;
+        grid-template-columns: 20% 20% 20%;
+        margin-left: 13px;
+        margin-top: 13px;
+        margin-bottom: 23px;
+
+        p {
+            width: 99px;
+            height: 20px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;    
+        }
+    }
+
+    .gallery-tittle {
+        h2 {
+            width: 128px;
+            height: 29px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #333333;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 13px;
+        }
+    }
+
+    .gallery-description {
+        p {
+            width: 321px;
+            height: 80px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;           
+            color: #828282;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 13px;
+        }
+    }
+
+    .gallery-buttons {
+        width: 351px;
+        height: 56px;
+       display: grid;
+       grid-template-columns: 50% 50%;
+       margin-left: 13px;
+       margin-top: 30px;
+        
+       .gallery-buttons-demo {
+        width: 135px;
+        height: 46px;
+        background: #2F80ED;
+        border-radius: 12px;    
+        place-self: center stretch;
+        display: grid;
+            p {
+                place-self: center;
+                width: 57px;
+                height: 22px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;    
+            }
+       }
+
+       .gallery-buttons-code {
+        width: 135px;
+        height: 46px;
+        border: 1px solid #2F80ED;
+        box-sizing: border-box;
+        border-radius: 12px;
+        place-self: center stretch;  
+        display: grid;
+            p{
+                place-self: center;
+                width: 57px;
+                height: 22px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: #2F80ED;    
+            }
+       }
+
+    }
+
+}
+
+@media (min-width: 768px ) {
+    
+    .gallery {
+        margin: 0;
+        width: 759px;
+        height: 320px;
+        background: #FFFFFF;
+        border-radius: 12px;  
+        display: grid;
+        grid-template-columns: 330px auto;
+        grid-template-rows: 10% 15% 20% 26%;
+        column-gap: 20px;
+        row-gap: 30px;
+
+            .gallery-image {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 100%;
+                
+                img {
+                    width: 322px;
+                    height: 274px;
+                    border-radius: 12px;
+                    grid-column: 1/2;
+                    grid-row: 1/5;  
+                    justify-self: center;
+                    align-self: stretch;
+                    margin: 0;
+                    margin-top: 13px;
+                    margin-left: 13px;
+                }
+            }
+        
+            .gallery-technology {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                display: grid;
+                grid-template-rows: 100%;
+                    p {
+                       
+                        margin: 0;
+                    }
+                
+            }
+
+            .gallery-tittle {
+                grid-column: 2/3;
+                grid-row: 2/3;
+                display: grid;
+                grid-template-rows: 100%;
+                    h2 {
+                        justify-self: start;
+                        align-self: center;
+                        margin: 0;
+                    }
+            }
+
+            .gallery-description {
+                width: 100%;
+                grid-column: 2/3;
+                grid-row: 3/4;
+                display: grid;
+                grid-template-rows: 100%;
+                    p {
+                        width: 100%;
+                        height: 100%;
+                        justify-self: start;
+                        align-self: center;
+                        margin: 0;
+                        padding-right: 13px;
+                    }
+            }
+
+            .gallery-buttons {
+                grid-column: 2/3;
+                grid-row: 4/5;
+                margin: 0;
+                align-self: center;
+                justify-self: center;
+            }
+    }  
+ }

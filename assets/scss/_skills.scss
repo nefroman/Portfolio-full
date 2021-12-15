@@ -1,0 +1,86 @@
+.skills {
+    width: 355px;
+    height: 284px;
+    -webkit-box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.75);
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 12px;
+    margin-top: 50px;
+
+    .skills-tittle {
+        h2 {
+            width: 113px;
+            height: 32px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;     
+            color: #4F4F4F;  
+            padding-top: 30px;
+            margin-left: 13px;  
+        }
+    }
+    
+    .skills-tech {
+        width: 345px;
+        height: 75%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        column-gap: 15px;
+        margin-top: 20px;
+
+            .tech{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: #4F4F4F;
+                align-self: center;
+                margin-left: 13px;
+            }
+
+            .barra {
+                width: 222px;
+                height: 9px;
+                background: #C4C4C4;
+                border-radius: 12px;  
+                align-self: center; 
+                display: grid;
+                    .barra-react {
+                        width: 50px;
+                        height: 9px;
+                        background: #2F80ED;
+                        border-radius: 12px;    
+                    }
+                    .barra-js {
+                        width: 126px;
+                        height: 9px;
+                        background: #2F80ED;
+                        border-radius: 12px;    
+                    }
+                    .barra-css {
+                        width: 176px;
+                        height: 9px;
+                        background: #2F80ED;
+                        border-radius: 12px;    
+                    }
+                    .barra-vue {
+                        width: 80px;
+                        height: 9px;
+                        background: #2F80ED;
+                        border-radius: 12px;    
+                    }
+            }
+    }
+}
+
+@media (min-width: 768px ) {
+    .skills {
+        margin: 0;
+    }
+}

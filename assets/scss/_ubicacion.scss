@@ -1,0 +1,19 @@
+
+@media (min-width: 768px) {
+.grid-page {
+    display: grid;
+    grid-template-columns: 500px 370px auto;
+    grid-template-rows:  350px 500px; 
+
+        .gallery {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            align-self: end;
+        }
+        
+        .skills {
+            align-self: center;
+        }
+}
+
+}
