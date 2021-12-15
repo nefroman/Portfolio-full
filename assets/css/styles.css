@@ -298,7 +298,7 @@
 @media (min-width: 768px) {
   .gallery {
     margin: 0;
-    width: 759px;
+    width: 859px;
     height: 320px;
     background: #FFFFFF;
     border-radius: 12px;
@@ -371,7 +371,7 @@
 @media (min-width: 768px) {
   .grid-page {
     display: grid;
-    grid-template-columns: 500px 370px auto;
+    grid-template-columns: 500px 370px 496px;
     grid-template-rows: 350px 500px;
   }
   .grid-page .gallery {
@@ -381,6 +381,9 @@
   }
   .grid-page .skills {
     align-self: center;
+  }
+  .grid-page .skills-design {
+    justify-self: end;
   }
 }
 .skills {
@@ -425,6 +428,16 @@
   align-self: center;
   margin-left: 13px;
 }
+.skills .skills-tech .ps {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #4F4F4F;
+  align-self: center;
+  margin-left: 13px;
+}
 .skills .skills-tech .barra {
   width: 222px;
   height: 9px;
@@ -457,10 +470,29 @@
   background: #2F80ED;
   border-radius: 12px;
 }
+.skills .skills-tech .barra .barra-ps {
+  width: 35px;
+  height: 9px;
+  background: #2F80ED;
+  border-radius: 12px;
+}
+.skills .skills-tech .barra .barra-figma {
+  width: 155px;
+  height: 9px;
+  background: #2F80ED;
+  border-radius: 12px;
+}
 
 @media (min-width: 768px) {
   .skills {
     margin: 0;
+  }
+
+  .skills-design {
+    width: 415.02px;
+    height: 210px;
+    background: #FFFFFF;
+    border-radius: 12px;
   }
 }
 

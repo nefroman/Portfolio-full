@@ -25,6 +25,7 @@
         }
     }
     
+
     .skills-tech {
         width: 345px;
         height: 75%;
@@ -38,6 +39,17 @@
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
+                line-height: 20px;
+                color: #4F4F4F;
+                align-self: center;
+                margin-left: 13px;
+            }
+
+            .ps{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
                 line-height: 20px;
                 color: #4F4F4F;
                 align-self: center;
@@ -75,6 +87,20 @@
                         background: #2F80ED;
                         border-radius: 12px;    
                     }
+
+                    .barra-ps {
+                        width: 35px;
+                        height: 9px;
+                        background: #2F80ED;
+                        border-radius: 12px;    
+                    }
+
+                    .barra-figma {
+                        width: 155px;
+                        height: 9px;
+                        background: #2F80ED;
+                        border-radius: 12px;    
+                    }
             }
     }
 }
@@ -82,5 +108,12 @@
 @media (min-width: 768px ) {
     .skills {
         margin: 0;
+    }
+
+    .skills-design {
+        width: 415.02px;
+        height: 210px;
+        background: #FFFFFF;
+        border-radius: 12px;
     }
 }
