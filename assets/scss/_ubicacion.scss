@@ -3,7 +3,7 @@
 .grid-page {
     display: grid;
     grid-template-columns: 500px 370px 496px;
-    grid-template-rows:  350px 400px 100px 330px 250px; 
+    grid-template-rows:  350px 400px 100px 330px 250px 80px 110px 480px; 
         
         .infop {
             align-self: start;
@@ -44,6 +44,18 @@
             align-self: start;
             margin: 0
         }
+
+        .blog-mq {
+            grid-row: 7/8;
+            grid-column: 2/3;
+            align-self: end;
+        }
+
+        .blog {
+            grid-row: 8/9;
+            grid-column: 2/3;
+        }
 }
 
 }
+
