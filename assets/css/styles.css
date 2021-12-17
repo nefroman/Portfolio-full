@@ -416,6 +416,10 @@
     grid-row: 8/9;
     grid-column: 2/3;
   }
+  .grid-page .hobbies {
+    grid-row: 7/9;
+    margin: 0;
+  }
 }
 .skills {
   width: 355px;
@@ -637,6 +641,14 @@
     height: 690px;
   }
 }
+.blog-mq {
+  /* visibility: hidden; */
+}
+.blog-mq h3 {
+  display: none;
+  visibility: hidden;
+}
+
 .blog {
   width: 355px;
   height: 662px;
@@ -649,9 +661,6 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50px 323px 220px 100%;
-}
-.blog .blog-mq {
-  visibility: hidden;
 }
 .blog .blog-section {
   width: 150px;
@@ -721,7 +730,6 @@
 
 @media (min-width: 768px) {
   .blog-mq {
-    visibility: visible;
     width: 859px;
     height: 66px;
     background: #FFFFFF;
@@ -742,6 +750,8 @@
     color: #4F4F4F;
     align-self: center;
     margin-left: 13px;
+    display: block;
+    visibility: visible;
   }
 
   .blog {
@@ -766,6 +776,77 @@
   .blog .blog-img {
     width: 424px;
     height: 320px;
+  }
+}
+.hobbies {
+  width: 355px;
+  height: 662px;
+  -webkit-box-shadow: -1px 1px 12px 7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 12px 7px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 12px 7px rgba(0, 0, 0, 0.75);
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 12px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hobbies .hobbies-tittle {
+  width: 240px;
+  height: 29px;
+  margin-left: 13px;
+  margin-top: 10px;
+}
+.hobbies .hobbies-tittle h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #4F4F4F;
+}
+.hobbies .hobbies-image {
+  width: 341px;
+  height: 139px;
+  border-radius: 12px;
+}
+.hobbies .hobbies-image img {
+  width: 100%;
+  padding-left: 13px;
+}
+.hobbies .hobbie-action {
+  width: 74.19px;
+  height: 22px;
+  margin-left: 13px;
+}
+.hobbies .hobbie-action h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+.hobbies .hobbie-description {
+  width: 391px;
+  height: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+  margin-left: 13px;
+}
+
+@media (min-width: 768px) {
+  .hobbies {
+    width: 413px;
+    height: 836px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
 

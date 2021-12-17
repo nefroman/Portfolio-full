@@ -1,4 +1,12 @@
 
+ .blog-mq {
+    /* visibility: hidden; */
+        h3 {
+            display: none;
+            visibility: hidden;
+        }
+}
+
 .blog {
     width: 355px;
     height: 662px;
@@ -12,9 +20,7 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 50px 323px 220px 100%;
 
-        .blog-mq {
-            visibility: hidden;
-        }
+       
 
         .blog-section {
             width: 150px;
@@ -92,7 +98,9 @@
 @media (min-width: 768px) {
     
     .blog-mq {
-        visibility: visible;
+        h3 {
+           
+        }
         width: 859px;
         height: 66px;
         background: #FFFFFF;
@@ -112,6 +120,8 @@
                 color: #4F4F4F;  
                 align-self: center;  
                 margin-left: 13px;
+                display: block;
+                visibility: visible;              
             }  
     }
     
